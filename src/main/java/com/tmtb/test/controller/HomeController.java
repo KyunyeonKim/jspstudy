@@ -1,4 +1,4 @@
-package com.tmtb.pageon.controller;
+package com.tmtb.test.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;

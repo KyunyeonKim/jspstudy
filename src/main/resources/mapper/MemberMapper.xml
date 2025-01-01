@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tmtb.test.mapper.MemberMapper"> <!-- namespace 수정 -->
+    <insert id="insertMember" parameterType="map">
+        INSERT INTO member (
+            id, pass, name, phone, age, gender, email, address, profile
+        ) VALUES (
+                     #{id}, #{pass}, #{name}, #{phone}, #{age}, #{gender}, #{email}, #{address}, #{profile}
+                 )
+    </insert>
+</mapper>

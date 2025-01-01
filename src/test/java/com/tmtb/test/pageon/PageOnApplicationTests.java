@@ -1,4 +1,4 @@
-package com.tmtb.pageon.pageon;
+package com.tmtb.test.pageon;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
