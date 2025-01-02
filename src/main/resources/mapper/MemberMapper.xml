@@ -8,4 +8,10 @@
                      #{id}, #{pass}, #{name}, #{phone}, #{age}, #{gender}, #{email}, #{address}, #{profile}
                  )
     </insert>
+
+    <select id="findByGender" resultType="com.tmtb.test.model.Member">
+        SELECT *
+        FROM member
+        WHERE gender = #{gender}
+    </select>
 </mapper>

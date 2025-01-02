@@ -42,4 +42,21 @@ public class MemberController {
     public String insertPage(){
         return "memberForm";
     }
+
+    @GetMapping("/members/search")
+    public String searchMembers(@RequestParam(name = "gender", required = false) String gender, Model model) {
+        // 성별에 따라 회원 검색
+        List<Member> members = memberService.findMembersByGender(gender);
+        model.addAttribute("members", members);
+        return "memberSearch";
+    }
+
+    @GetMapping("/radiopage")
+    public String genderMemberPage() {
+        return "memberSearch"; // 성공 메시지를 보여주는 페이지
+    }
+
+
+
+
 }

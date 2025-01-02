@@ -8,7 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PageOn</title>
 </head>
-<body>
-testt
+<a>
+test
+
+<a href="/insertpage">링크 텍스트</a>
+<a href="/radiopage">라디오 페이지</a>
 </body>
 </html>
